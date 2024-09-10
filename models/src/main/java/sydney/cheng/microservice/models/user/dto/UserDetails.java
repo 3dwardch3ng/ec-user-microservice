@@ -2,11 +2,9 @@ package sydney.cheng.microservice.models.user.dto;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
 
 @Data
 @Builder
-@Getter
 public class UserDetails {
     private String firstName;
     private String lastName;
