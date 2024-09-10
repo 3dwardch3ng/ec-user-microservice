@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import sydney.cheng.microservice.models.user.dto.AuthUser;
 import sydney.cheng.microservice.models.user.dto.User;
 
-@FeignClient(name = "user-service", path = "/v1/user")
+@FeignClient(name = "ec-user-microservice", path = "/v1/user")
 public interface ECUserMicroserviceFeignClient {
     @GetMapping("/{username}")
     ResponseEntity<User> getUserByUsername(@PathVariable String username);
